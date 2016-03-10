@@ -108,12 +108,12 @@
         "source": "D:\\Connect\\lib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_icon.xml"
     },
     {
-        "merged": "D:\\Connect\\lib\\build\\intermediates\\res\\merged\\meizu\\release\\layout\\abc_list_menu_item_layout.xml",
-        "source": "D:\\Connect\\lib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
-    },
-    {
         "merged": "D:\\Connect\\lib\\build\\intermediates\\res\\merged\\meizu\\release\\layout\\select_dialog_singlechoice_material.xml",
         "source": "D:\\Connect\\lib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "D:\\Connect\\lib\\build\\intermediates\\res\\merged\\meizu\\release\\layout\\abc_list_menu_item_layout.xml",
+        "source": "D:\\Connect\\lib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_layout.xml"
     },
     {
         "merged": "D:\\Connect\\lib\\build\\intermediates\\res\\merged\\meizu\\release\\layout\\abc_alert_dialog_material.xml",

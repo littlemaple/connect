@@ -4,15 +4,6 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
 
-    defaultConfig {
-        buildConfigField "boolean", "DEVOLOP_MODE", "true"
-        buildConfigField "boolean", "TEST_MODE", "true"
-        buildConfigField "String", "name", "\"meizu\""
-        minSdkVersion 11
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
-    }
     publishNonDefault true
     productFlavors {
         meizu {
