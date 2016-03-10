@@ -5,9 +5,12 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+
+import connect.app.com.lib.Constant;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-       FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -26,6 +28,12 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        TextView textView = (TextView) findViewById(R.id.tv_config);
+        textView.setText(Constant.isDevelopMode ? "开发模式" : "不是开发模式");
+        textView.setText("\n");
+        textView.setText(Constant.isTestMode ? "测试模式" : "不是测试模式");
+        textView.append("\n");
+        textView.append(Constant.name);
     }
 
     @Override
