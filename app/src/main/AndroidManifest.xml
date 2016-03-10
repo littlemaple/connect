@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="${appIcon}"
+        android:icon="@mipmap/ic_launcher"
         android:label="${appName}"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">

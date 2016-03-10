@@ -29,13 +29,11 @@ android {
             applicationId "connect.app.com.connect.xiaomi"
             signingConfig signingConfigs.xiaomi
             manifestPlaceholders=[appName:"xiaomi"]
-            manifestPlaceholders=[appIcon:"@mipmap/ic_launcher"]
         }
         meizu {
             applicationId "connect.app.com.connect.meizu"
             signingConfig signingConfigs.meizu
             manifestPlaceholders=[appName:"meizu"]
-            manifestPlaceholders=[appIcon:"@mipmap/ic_launcher_dev"]
         }
 
     }
