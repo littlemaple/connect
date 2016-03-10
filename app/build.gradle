@@ -4,6 +4,20 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
 
+    signingConfigs {
+        xiaomi {
+            keyAlias 'medzone-biotech.com'
+            keyPassword 'medzone123321'
+            storeFile file('C:/keystore')
+            storePassword 'medzone123321'
+        }
+        meizu {
+            keyAlias 'medzone-biotech.com'
+            keyPassword 'medzone123321'
+            storeFile file('C:/keystore')
+            storePassword 'medzone123321'
+        }
+    }
     defaultConfig {
         applicationId "connect.app.com.connect"
         minSdkVersion 11
@@ -11,7 +25,30 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    productFlavors {
+        xiaomi {
+            applicationId "connect.app.com.connect.xiaomi"
+            minSdkVersion 11
+            targetSdkVersion 23
+            versionCode 24
+            versionName "1.0"
+            signingConfig signingConfigs.xiaomi
+        }
+        zeizu {
+            applicationId "connect.app.com.connect.meizu"
+            minSdkVersion 11
+            targetSdkVersion 23
+            versionCode 23
+            versionName "1.0"
+            signingConfig signingConfigs.meizu
+        }
+
+    }
     buildTypes {
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -20,8 +57,10 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
+    xiaomiCompile project(path:':lib',configuration:'xiaomiRelease')
+    zeizuCompile project(path:':lib',configuration:'meizuRelease')
 }
