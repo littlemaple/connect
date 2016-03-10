@@ -19,6 +19,10 @@ android {
         }
     }
     defaultConfig {
+<<<<<<< HEAD
+=======
+        applicationId "connect.app.com.connect"
+>>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
         minSdkVersion 11
         targetSdkVersion 23
         versionCode 1
@@ -27,6 +31,7 @@ android {
     productFlavors {
         xiaomi {
             applicationId "connect.app.com.connect.xiaomi"
+<<<<<<< HEAD
             signingConfig signingConfigs.xiaomi
             manifestPlaceholders=[appName:"xiaomi"]
         }
@@ -34,6 +39,21 @@ android {
             applicationId "connect.app.com.connect.meizu"
             signingConfig signingConfigs.meizu
             manifestPlaceholders=[appName:"meizu"]
+=======
+            minSdkVersion 11
+            targetSdkVersion 23
+            versionCode 24
+            versionName "1.0"
+            signingConfig signingConfigs.xiaomi
+        }
+        zeizu {
+            applicationId "connect.app.com.connect.meizu"
+            minSdkVersion 11
+            targetSdkVersion 23
+            versionCode 23
+            versionName "1.0"
+            signingConfig signingConfigs.meizu
+>>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
         }
 
     }
@@ -55,5 +75,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
     xiaomiCompile project(path:':lib',configuration:'xiaomiRelease')
+<<<<<<< HEAD
     meizuCompile project(path:':lib',configuration:'meizuRelease')
+=======
+    zeizuCompile project(path:':lib',configuration:'meizuRelease')
+>>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
 }

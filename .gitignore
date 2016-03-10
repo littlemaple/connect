@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # built application files
 *.apk
 *.ap_
@@ -28,6 +29,8 @@ proguard/
 *.iws
 .idea/
 
+=======
+>>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
 *.iml
 .gradle
 /local.properties
