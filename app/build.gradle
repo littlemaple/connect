@@ -19,10 +19,7 @@ android {
         }
     }
     defaultConfig {
-<<<<<<< HEAD
-=======
-        applicationId "connect.app.com.connect"
->>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
+        manifestPlaceholders = [jpushAppKey: "qwwertyusdfg"]
         minSdkVersion 11
         targetSdkVersion 23
         versionCode 1
@@ -30,30 +27,18 @@ android {
     }
     productFlavors {
         xiaomi {
+            manifestPlaceholders = [jpushAppKey: "qwwertyusdfg"]
             applicationId "connect.app.com.connect.xiaomi"
-<<<<<<< HEAD
+            manifestPlaceholders = [appName: "@string/xiaomi"]
             signingConfig signingConfigs.xiaomi
-            manifestPlaceholders=[appName:"xiaomi"]
+
         }
         meizu {
+            manifestPlaceholders = [jpushAppKey: "123456ertyusdfg"]
             applicationId "connect.app.com.connect.meizu"
+            manifestPlaceholders = [appName: "@string/meizu"]
             signingConfig signingConfigs.meizu
-            manifestPlaceholders=[appName:"meizu"]
-=======
-            minSdkVersion 11
-            targetSdkVersion 23
-            versionCode 24
-            versionName "1.0"
-            signingConfig signingConfigs.xiaomi
-        }
-        zeizu {
-            applicationId "connect.app.com.connect.meizu"
-            minSdkVersion 11
-            targetSdkVersion 23
-            versionCode 23
-            versionName "1.0"
-            signingConfig signingConfigs.meizu
->>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
+
         }
 
     }
@@ -74,10 +59,8 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
-    xiaomiCompile project(path:':lib',configuration:'xiaomiRelease')
-<<<<<<< HEAD
-    meizuCompile project(path:':lib',configuration:'meizuRelease')
-=======
-    zeizuCompile project(path:':lib',configuration:'meizuRelease')
->>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
+    xiaomiCompile project(path: ':lib', configuration: 'xiaomiRelease')
+    meizuCompile project(path: ':lib', configuration: 'meizuRelease')
+    compile('com.android.support:cardview-v7:23+')
+    compile project(":retrofit")
 }

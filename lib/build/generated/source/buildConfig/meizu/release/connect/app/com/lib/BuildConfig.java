@@ -14,4 +14,5 @@ public final class BuildConfig {
   public static final boolean DEVOLOP_MODE = true;
   public static final boolean TEST_MODE = true;
   public static final String name = "meizu";
+  // Fields from default config.
 }

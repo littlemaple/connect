@@ -1,4 +1,14 @@
 <resources>
     <string name="app_name">Connect</string>
+    <string name="xiaomi">小米</string>
+    <string name="meizu">魅族</string>
     <string name="action_settings">Settings</string>
+    <string name="str"><![CDATA[<u>setting</u>]]></string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="date_picker_month_typeface">sans-serif-medium</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="date_picker_day_of_week_typeface">sans-serif-medium</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="date_picker_day_typeface">sans-serif-medium</string>
 </resources>

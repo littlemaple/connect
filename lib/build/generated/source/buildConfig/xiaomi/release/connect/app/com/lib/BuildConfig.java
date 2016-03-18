@@ -14,4 +14,5 @@ public final class BuildConfig {
   public static final boolean DEVOLOP_MODE = false;
   public static final boolean TEST_MODE = false;
   public static final String name = "xiaomi";
+  // Fields from default config.
 }

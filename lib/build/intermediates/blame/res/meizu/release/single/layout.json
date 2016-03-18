@@ -1,11 +1,11 @@
 [
     {
-        "merged": "D:\\Connect\\lib\\build\\intermediates\\res\\merged\\meizu\\release\\layout\\abc_action_bar_title_item.xml",
-        "source": "D:\\Connect\\lib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_title_item.xml"
-    },
-    {
         "merged": "D:\\Connect\\lib\\build\\intermediates\\res\\merged\\meizu\\release\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "D:\\Connect\\lib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "D:\\Connect\\lib\\build\\intermediates\\res\\merged\\meizu\\release\\layout\\abc_action_bar_title_item.xml",
+        "source": "D:\\Connect\\lib\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\layout\\abc_action_bar_title_item.xml"
     },
     {
         "merged": "D:\\Connect\\lib\\build\\intermediates\\res\\merged\\meizu\\release\\layout\\abc_screen_simple_overlay_action_mode.xml",

@@ -3,10 +3,6 @@
 
     <application
         android:allowBackup="true"
-<<<<<<< HEAD
-=======
-        android:label="@string/app_name"
->>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
         android:supportsRtl="true">
 
     </application>

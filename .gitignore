@@ -13,7 +13,7 @@
 bin/
 gen/
 
-# Local configuration file (sdk path, etc)
+# Local configuration originFile (sdk path, etc)
 local.properties
 
 # Eclipse project files

@@ -4,18 +4,11 @@ android {
     compileSdkVersion 23
     buildToolsVersion "23.0.1"
 
-<<<<<<< HEAD
-=======
     defaultConfig {
         buildConfigField "boolean", "DEVOLOP_MODE", "true"
         buildConfigField "boolean", "TEST_MODE", "true"
         buildConfigField "String", "name", "\"meizu\""
-        minSdkVersion 11
-        targetSdkVersion 23
-        versionCode 1
-        versionName "1.0"
     }
->>>>>>> 4032fe0ba0c53009c4047d402255389ed1a62fb7
     publishNonDefault true
     productFlavors {
         meizu {
@@ -47,4 +40,8 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'io.reactivex:rxandroid:1.1.0'
+// Because RxAndroid releases are few and far between, it is recommended you also
+// explicitly depend on RxJava's latest version for bug fixes and new features.
+    compile 'io.reactivex:rxjava:1.1.0'
 }
